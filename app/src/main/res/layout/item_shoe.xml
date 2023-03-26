@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.tn.shoestore.models.Shoe" />
+
+        <variable
+            name="itemClickListener"
+            type="com.tn.shoestore.ui.shoes.CustomerClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> itemClickListener.onClick(model)}"
+        android:padding="@dimen/margin_padding_size_small">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/item_image_size"
+            android:layout_height="@dimen/item_image_size"
+            app:layout_constraintBottom_toBottomOf="@id/tv_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/app_image" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ShoeNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{model.name}"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Adidas" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            style="@style/ShoeDescriptionText"
+            android:layout_width="0dp"
+            android:text="@{model.size}"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="Adidas" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/ShoeDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{model.company}"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toBottomOf="@id/tv_size"
+            tools:text="Adidas" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/ShoeDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{model.description}"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_view"
+            app:layout_constraintTop_toBottomOf="@id/tv_company"
+            tools:text="Adidas" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/margin_padding_size_xxlarge"
+            android:layout_marginTop="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_xxlarge"
+            android:background="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

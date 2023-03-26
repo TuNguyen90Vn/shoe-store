@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="welcome_to_shoes_store">Welcome to MyShoes store</string>
+    <string name="login">Login</string>
+    <string name="shoe_store">Shoe store</string>
+    <string name="enter_you_email">Enter you email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="instruction_screen">Instruction Screen</string>
+    <string name="description">A shoe store application is a mobile application that allows customers to browse and purchase shoes from their mobile devices. The introduction of a shoe store application should be engaging and informative. It should include the name of the application, the types of shoes sold, and the application’s unique selling proposition (USP). The USP is what sets the application apart from its competitors and should be highlighted in the introduction. For example, if the application specializes in eco-friendly shoes, the introduction should mention this. The introduction should also include information about the application’s features, such as the ability to search for shoes by size, color, and style, and the ability to save favorite shoes for later. Additionally, the introduction should include information about the application’s security features, such as secure payment processing and data encryption.</string>
+    <string name="discover">Discover</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_text_1">This is the Shoe Store, where all your shoe dreams come true!</string>
+    <string name="welcome_text_2">Please tap in the button below to read the instructions and understand how our store works.</string>
+
+    <!-- Instructions -->
+    <string name="instructions">Instructions</string>
+    <string name="instructions_text_1">In the next screen, you\'ll be able to browse through the shoes list.</string>
+    <string name="instructions_text_2">Please take your time and enjoy!</string>
+
+    <!-- Shoe list -->
+    <string name="shoe_list">Shoe List</string>
+    <string name="empty_list">No shoes to display.</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_company">Company: %s</string>
+    <string name="shoe_size">Shoe size: %.1f</string>
+    <string name="shoe_description">Description: %s</string>
+
+    <!-- Shoe detail -->
+    <string name="shoe_detail">Shoe Detail</string>
+    <string name="shoe_detail_company">Company</string>
+    <string name="shoe_detail_size">Shoe size</string>
+    <string name="shoe_detail_description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="empty_fields_warning">Please fill all fields</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="open_shoe_store">Open Shoe Store</string>
+    <string name="floating_action_button">Floating action button</string>
+    <string name="logout">Logout</string>
+</resources>
